@@ -3,8 +3,8 @@ using System.Collections;
 using System;
 
 public class CarController : MonoBehaviour {
-    private float enginePower = 50;
-    private float maxSteer = 2;
+    public float enginePower = 50;
+    public float maxSteer = 2;
     private float power;
     private float steer;
 

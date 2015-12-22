@@ -1,0 +1,52 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.063 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Dread\Documents\GitHub\CPP\Builds\Demo 23.11._Data\Managed\System.dll (this message is harmless)
+12/01/15 08:29:29: [CAPI] LibOVR module is located at C:\Windows\SYSTEM32\LibOVRRT32_0_7.dll
+
+ 
+(Filename:  Line: 46)
+
+Unity v5.2.2f1, Oculus Utilities v0.1.3.0, OVRPlugin v0.1.2.1.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating volume controller...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2238 -> priority: 1 
+12/01/15 08:29:50: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x200: C2S=49.3862 (22.8403-741.609), S2C=18.3211 (8.3903-697.327), RTT=219.616 (148.695-1562.93), Runtime=151.909 (110.006-832.97), IPC=67.7074 (33.0951-1438.94) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+12/01/15 08:30:10: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x200: C2S=44.2635 (22.3741-97.4207), S2C=28.0655 (7.92417-2374.92), RTT=217.372 (154.754-2586.54), Runtime=145.043 (109.54-266.625), IPC=72.329 (31.6967-2407.08) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
+12/01/15 08:30:41: [IPC] WARNING: Overhead alert threshold exceeded for Compositor_EndFrame : x225: C2S=42.861 (20.9757-805.469), S2C=19.0284 (7.45804-719.235), RTT=219.956 (149.627-1652.89), Runtime=158.067 (110.938-920.136), IPC=61.8893 (30.2983-817.588) (microseconds) C2Ssize=995 (995-995), S2Csize=89 (89-89) (bytes)
+ 
+(Filename:  Line: 48)
+
