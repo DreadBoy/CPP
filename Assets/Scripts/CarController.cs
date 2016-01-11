@@ -5,13 +5,20 @@ using System;
 public class CarController : MonoBehaviour {
     public float enginePower = 50;
     public float maxSteer = 2;
-    private float power;
+    public float enginePitch=0;
+    public float power;
     private float steer;
+    public float gearMinValue = 0.0f;
+    public float gearMaxValue = 0.0f;
+
+    private AudioSource audio;
+
+    public int[] gearRatio ;
 
     // Use this for initialization
     void Start () {
-	
-	}
+        audio = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,5 +36,7 @@ public class CarController : MonoBehaviour {
 
         CarStats.speed = power;
         CarStats.steer = steer;
+        enginePitch = (float)(0.5 + ((-1*power) / enginePower));
+        audio.pitch = enginePitch;
     }
 }
