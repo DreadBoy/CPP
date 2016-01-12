@@ -5,15 +5,17 @@ using System.Collections;
 public class PropController : MonoBehaviour {
 
     Animator animator;
-
+    AudioSource audio;
     void Start()
     {
         animator = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 
     public void Left()
     {
         animator.SetTrigger("Left");
+        audio.Play();
     }
 
     public void Right()
