@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 public class PropController : MonoBehaviour {
@@ -15,7 +16,8 @@ public class PropController : MonoBehaviour {
     public void Left()
     {
         animator.SetTrigger("Left");
-        audio.Play();
+        audio.pitch += 0.2f;
+        StartCoroutine(LoadDelayed());
     }
 
     public void Right()
@@ -42,5 +44,11 @@ public class PropController : MonoBehaviour {
                 Straight();
                 break;
         }
+    }
+
+    IEnumerator LoadDelayed()
+    {
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene("Primer2");
     }
 }
