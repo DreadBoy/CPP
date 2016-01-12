@@ -374,6 +374,9 @@ MonoBehaviour:
     prop: {fileID: 1510101803}
   success: {fileID: 1088267491}
   failure: {fileID: 43299464}
+  currentScene: Mesto
+  nextScene: Primer2
+  crash: {fileID: 8300000, guid: e959a5c61b4c9ad4f86058fa548c4f2e, type: 3}
 --- !u!1 &190017902
 GameObject:
   m_ObjectHideFlags: 0

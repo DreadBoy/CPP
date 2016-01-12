@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class IntersectionController : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class IntersectionController : MonoBehaviour
     public List<Action> scenario = new List<Action>();
 
     bool[] inputs = new bool[4];
-
-    public RectTransform success;
-    public RectTransform failure;
+    
+    public String currentScene;
+    public String nextScene;
+    public AudioClip crash;
+    public AudioClip success;
 
     void Update()
     {
@@ -40,12 +43,20 @@ public class IntersectionController : MonoBehaviour
         }
         else
         {
-            failure.gameObject.SetActive(true);
+            var source = gameObject.AddComponent<AudioSource>();
+            source.clip = crash;
+            source.Play();
+            StartCoroutine(delayedLoad(3, currentScene));
         }
 
 
         if (scenario.Count == 0)
-            success.gameObject.SetActive(true);
+        {
+            var source = gameObject.AddComponent<AudioSource>();
+            source.clip = success;
+            source.Play();
+            StartCoroutine(delayedLoad(3, nextScene));
+        }
 
     }
 
@@ -95,5 +106,11 @@ public class IntersectionController : MonoBehaviour
     {
         //return Input.GetAxis("Jump") > 0;
         return Input.GetKeyDown("space");
+    }
+
+    IEnumerator delayedLoad(float seconds, String scene)
+    {
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(scene);
     }
 }
